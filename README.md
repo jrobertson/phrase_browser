@@ -12,7 +12,7 @@
     "
 
     html = PhraseBrowser.new(s, target_url: 'http://somewebsite/?q').to_html
-    File.write '/tmp/accordion.html', 
+    File.write '/tmp/accordion.html', html
 
     `chromium /tmp/accordion.html`
 
